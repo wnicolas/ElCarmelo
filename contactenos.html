@@ -1,9 +1,196 @@
 <!DOCTYPE html><!-- HTML5 -->
 <html lang="es" dir="ltr">
+
+<head>
+	<title>Contacto - Liceo Psicopedagógico El Carmelo</title>
+	<meta charset="utf-8" />
+	<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]
+	<meta name="keywords" content=" Carmelo, El carmelo, Liceo, Psicopedagogico" />
+	<meta name="generator" content="Incomedia WebSite X5 Evolution 10.0.2.24 - www.websitex5.com" />
+	<meta name="viewport" content="width=1113" />
+	<link rel="icon" href="favicon.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="style/reset.css" media="screen,print" />
+	<link rel="stylesheet" type="text/css" href="style/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="style/style.css" media="screen,print" />
+	<link rel="stylesheet" type="text/css" href="style/template.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="style/menu.css" media="screen" />-->
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="style/ie.css" media="screen" /><![endif]-->
+	<!--<link rel="stylesheet" type="text/css" href="pcss/index.css" media="screen" />-->
+	<!--<script type="text/javascript" src="res/jquery.js?24"></script>
+	<script type="text/javascript" src="res/x5engine.js?24"></script>
+	<script type="text/javascript">
+		x5engine.boot.push(function () { x5engine.utils.imPreloadImages(['menu/index_h.png', 'menu/proceso-matriz_h.png', 'menu/noticias_h.png', 'menu/actividades_h.png', 'menu/contactenos_h.png', 'res/imLoad.gif', 'res/imClose.png']); });
+	</script>-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="js/contacto.js"></script>
+</head>
+
+<body style="background-color:lightskyblue;">
+
+	<!--NavBar-->
+
+	<div class="container"></div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">
+			<img src="images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+			<strong><em>Liceo psicopedagógico el Carmelo<em></strong>
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="proceso-matriz.html">Proceso matriz <span
+							class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="noticias.html">Noticias <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="actividades.html">Actividades <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="contactenos.html">Contáctenos <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	</div>
+
+	<!--Fin NavBar-->
+
+
+
+
+	<div class="container" style="width: 50%; text-align: justify;">
+		<hr>
+		<form action="contactar/contacto.php" method="POST">
+			<legend>Contacto</legend>
+			<div class="form-group">
+				<label>Nombre:</label>
+				<input type="text" class="form-control" name="nombre" placeholder="Ingrese sus nombres y apellidos"
+					required>
+			</div>
+			<div class="form-group">
+				<label>Teléfono de contacto:</label>
+				<input type="text" class="form-control" name="telefono" placeholder="Ingrese su número de contacto"
+					required>
+			</div>
+			<div class="form-group">
+				<label>Correo electrónico:</label>
+				<input type="email" class="form-control" name="correo" placeholder="nombre@ejemplo.com" required>
+			</div>
+			<div class="form-group">
+				<label>¿A quien desea contactar?</label>
+				<select class="form-control" name="select">
+					<option>Director de preescolar y primaria</option>
+					<option>Director de bachillerato por ciclos</option>
+
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Mensaje:</label>
+				<textarea class="form-control" rows="3" name="mensaje" required></textarea>
+			</div>
+			<button type="submit" class="btn btn-success" onclick="confirmacionEnvio()">Enviar mensaje</button>
+		</form>
+		<br>
+		<hr>
+	</div>
+
+	<div class="container" style="width:50%; ">
+		<br>
+		<fieldset>
+			<legend>Ubicación</legend>
+			<div style="text-align: center;">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1988.4065605426238!2d-74.1783021!3d4.6274061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e78ce6247ff%3A0x63a0f6b38976587c!2sLICEO%20PSICOPEDAGOGICO%20EL%20CARMELO!5e0!3m2!1ses!2sco!4v1599773912885!5m2!1ses!2sco"
+					width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+					tabindex="0">
+				</iframe>
+			</div>
+
+		</fieldset>
+		<hr>
+
+	</div>
+
+	<!-- Footer -->
+	<footer class="page-footer font-small blue pt-4" style="width: 100%;"> 
+		<!-- Footer Links -->
+		<div class="container-fluid text-center text-md-left" style="background-color: #343a40; padding-top: 15px;">
+			<!-- Grid row -->
+			<div class="row">
+				<!-- Grid column -->
+				<div class="col-md-4 mt-md-0 mt-3">
+					<!-- Content -->
+					<h6 class="text-uppercase" style="color: white;">Liceo psicopedagógico el Carmelo</h6>
+					<ul style="color: wheat;">
+						<li>PBX: (57 1) 4 94 41 32</li>
+						<li>Diagonal 49 # 86C - 17 sur </li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none pb-3">
+				<!-- Grid column -->
+				<div class="col-md-4 mb-md-0 mb-3">
+					<h6 class="text-uppercase" style="color: white;">PRIMARIA Y PREESCOLAR</h6>
+					<ul style="color: wheat;">
+						<li>rectoria@elcarmelo.com.co </li>
+						<li>liceoelcarmelo40@yahoo.es</li>
+						<li>secretaria@elcarmelo.com.co</li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<!-- Grid column -->
+				<div class="col-md-4 mb-md-0 mb-3">
+					<!-- Links -->
+					<h6 class="text-uppercase" style="color: white;">BACHILLERATO POR CICLOS</h6>
+					<ul style="color: wheat;">
+						<li>PBX: (57) 300 556 09 13</li>
+						<li>(57)312 319 26 36</li>
+						<li>lcarog30@hotmail.com</li>
+						<li>liceocarmelo@yahoo.com</li>
+					</ul>
+					</ul>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+	</footer>
+	<!--Fin Footer-->
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!--
+<!DOCTYPE html> HTML5 
+<html lang="es" dir="ltr">
 	<head>
 		<title>Contáctenos - Liceo Psicopedagógico El Carmelo</title>
 		<meta charset="utf-8" />
-		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
+		[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]
 		<meta name="generator" content="Incomedia WebSite X5 Evolution 10.0.2.24 - www.websitex5.com" />
 		<meta name="viewport" content="width=1113" />
 		<link rel="icon" href="favicon.png" type="image/png" />
@@ -12,7 +199,7 @@
 		<link rel="stylesheet" type="text/css" href="style/style.css" media="screen,print" />
 		<link rel="stylesheet" type="text/css" href="style/template.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="style/menu.css" media="screen" />
-		<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="style/ie.css" media="screen" /><![endif]-->
+		[if lte IE 7]><link rel="stylesheet" type="text/css" href="style/ie.css" media="screen" /><![endif]
 		<link rel="stylesheet" type="text/css" href="pcss/contactenos.css" media="screen" />
 		<script type="text/javascript" src="res/jquery.js?24"></script>
 		<script type="text/javascript" src="res/x5engine.js?24"></script>
@@ -22,6 +209,10 @@
 		
 	</head>
 	<body>
+
+		
+
+
 		<div id="imHeaderBg"></div>
 		<div id="imFooterBg"></div>
 		<div id="imPage">
@@ -124,3 +315,4 @@
 
 		</body>
 </html>
+-->
